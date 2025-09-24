@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Download Verification</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; background: #e9f0f7; padding: 50px; }
+    .container { background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.15); max-width: 500px; margin: auto; }
+    h1 { color: #2c3e50; }
+    p { color: #555; font-size: 16px; margin: 20px 0; }
+    .btn { background: #3498db; color: white; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; font-size: 18px; }
+    .btn:hover { background: #2980b9; }
+    img { width: 120px; margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://cdn-icons-png.flaticon.com/512/888/888857.png" alt="App Icon">
+    <h1>App Download Verification</h1>
+    <p>To access this content, please verify by downloading a free app.</p>
+    <button class="btn" onclick="openLocker()">Verify Now</button>
+  </div>
+
+  <script>
+    function openLocker() {
+      // كود Content Locker من CPALead
+      var s = document.createElement("script");
+      s.type = "text/javascript";
+      s.src = "https://www.cpalead.com/mygateway.php?pub=XXXX&gateid=YYYY"; 
+      document.body.appendChild(s);
+    }
+  </script>
+</body>
+</html>
 
